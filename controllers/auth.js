@@ -5,13 +5,9 @@ const path = require("path");
 const fs = require("fs/promises");
 const Jimp = require("jimp");
 const { nanoid } = require("nanoid");
-
 const { User } = require("../models/user");
-
 const { HttpError, ctrlWrapper, sendEmail } = require("../helpers");
-
 const { SECRET_KEY, BASE_URL } = process.env;
-
 const avatarDir = path.join(__dirname, "../", "public", "avatars");
 
 const register = async (req, res) => {

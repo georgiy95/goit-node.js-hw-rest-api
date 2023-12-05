@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-
 const { META_PASSWORD } = process.env;
 
 const nodemailerConfig = {
